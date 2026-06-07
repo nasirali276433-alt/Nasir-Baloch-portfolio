@@ -1,48 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meer Company - Data Entry Services</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meer Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Meer Company</h1>
-    <p>Professional Data Entry Services</p>
+    <h1>Nasir Baloch Portfolio</h1>
+    <p>Front-End Web Developer</p>
 </header>
 
 <nav>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
     <a href="#services">Services</a>
-    <a href="#owner">Owner</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <section class="hero">
-    <h2>Welcome to Meer Company</h2>
-    <p>Providing Accurate, Fast and Reliable Data Entry Services</p>
-
-    <button class="btn" onclick="openForm()">Get Started</button>
+    <h2>Hi, I'm Nasir Baloch</h2>
+    <p>Front-End Web Developer | HTML | CSS | JavaScript</p>
+    <button class="btn" onclick="openForm()">Hire Me</button>
 </section>
 
-<!-- Registration Popup -->
 <div id="registerForm" class="popup">
     <div class="popup-content">
         <span class="close" onclick="closeForm()">&times;</span>
 
-        <h2>Create Account</h2>
+        <h2>Hire Me</h2>
 
         <form onsubmit="registerAccount(event)">
-            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Email Address" required>
-            <input type="text" placeholder="Company / Shop Name" required>
+            <input type="text" placeholder="Project Type" required>
             <input type="tel" placeholder="Phone Number" required>
-            <input type="password" placeholder="Password" required>
 
-            <button type="submit">Create Account</button>
+            <button type="submit">Submit</button>
 
             <p id="successMsg"></p>
         </form>
@@ -51,57 +48,94 @@
 
 <section id="about">
     <div class="card">
-        <h2>About Company</h2>
+        <h2>About Me</h2>
         <p>
-            Meer Company specializes in professional data entry services.
-            We help businesses organize and manage data efficiently.
+            Hello! My name is Nasir Baloch. I am a Front-End Web Developer and BS Information Technology student.
+            I create responsive and modern websites using HTML, CSS and JavaScript.
         </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="services">
+        <div class="service-box">
+            <h3>HTML5</h3>
+        </div>
+
+        <div class="service-box">
+            <h3>CSS3</h3>
+        </div>
+
+        <div class="service-box">
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="service-box">
+            <h3>Responsive Design</h3>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="services">
+        <div class="service-box">
+            <h3>Portfolio Website</h3>
+            <p>Modern personal portfolio website.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Business Website</h3>
+            <p>Responsive company website.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Login Form</h3>
+            <p>Professional login and signup page.</p>
+        </div>
     </div>
 </section>
 
 <section id="services">
-    <h2>Our Services</h2>
+    <h2>My Services</h2>
 
     <div class="services">
+
         <div class="service-box">
-            <h3>Data Entry</h3>
-            <p>Fast and accurate data entry solutions.</p>
+            <h3>Website Design</h3>
+            <p>Modern responsive website design.</p>
         </div>
 
         <div class="service-box">
-            <h3>Excel Management</h3>
-            <p>Professional spreadsheet management.</p>
+            <h3>Landing Pages</h3>
+            <p>Professional landing pages.</p>
         </div>
 
         <div class="service-box">
-            <h3>Copy-Paste Work</h3>
-            <p>Efficient handling of bulk tasks.</p>
+            <h3>Portfolio Websites</h3>
+            <p>Personal portfolio development.</p>
         </div>
 
         <div class="service-box">
-            <h3>Online Research</h3>
-            <p>Data collection and web research services.</p>
+            <h3>Website Maintenance</h3>
+            <p>Update and improve websites.</p>
         </div>
-    </div>
-</section>
 
-<section id="owner">
-    <div class="card">
-        <h2>About Me</h2>
-        <p>
-            My name is <strong>Meer</strong>. I am a student of
-            <strong>BS Information Technology (BS IT)</strong>.
-        </p>
     </div>
 </section>
 
 <section id="contact">
     <div class="card">
-        <h2>Contact Us</h2>
+        <h2>Contact Me</h2>
 
         <form class="contact-form" onsubmit="showMessage(event)">
             <input type="text" placeholder="Your Name" required>
+
             <input type="email" placeholder="Your Email" required>
+
             <textarea rows="5" placeholder="Your Message" required></textarea>
 
             <button type="submit">Send Message</button>
@@ -112,7 +146,7 @@
 </section>
 
 <footer>
-    <p>© 2026 Meer Company | Data Entry Services</p>
+    <p>© 2026 Nasir Baloch Portfolio | Front-End Developer</p>
 </footer>
 
 <script src="script.js"></script>
