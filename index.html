@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meer Portfolio</title>
+<title>Nasir Baloch Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,15 +34,20 @@
 
         <h2>Hire Me</h2>
 
-        <form onsubmit="registerAccount(event)">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="text" placeholder="Project Type" required>
-            <input type="tel" placeholder="Phone Number" required>
+        <form action="https://formsubmit.co/nasir89263@gmail.com" method="POST">
+
+            <input type="hidden" name="_subject" value="New Hire Request">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <input type="text" name="project" placeholder="Project Type" required>
+
+            <input type="tel" name="phone" placeholder="Phone Number" required>
 
             <button type="submit">Submit</button>
 
-            <p id="successMsg"></p>
         </form>
     </div>
 </div>
@@ -50,7 +56,7 @@
     <div class="card">
         <h2>About Me</h2>
         <p>
-            Hello! My name is Nasir Baloch. I am a Front-End Web Developer and BS Information Technology student.
+            I am Nasir Baloch, a Front-End Web Developer and BS Information Technology student.
             I create responsive and modern websites using HTML, CSS and JavaScript.
         </p>
     </div>
@@ -59,42 +65,31 @@
 <section id="skills">
     <h2>My Skills</h2>
 
-    <div class="services">
-        <div class="service-box">
-            <h3>HTML5</h3>
-        </div>
-
-        <div class="service-box">
-            <h3>CSS3</h3>
-        </div>
-
-        <div class="service-box">
-            <h3>JavaScript</h3>
-        </div>
-
-        <div class="service-box">
-            <h3>Responsive Design</h3>
-        </div>
+    <div class="grid">
+        <div class="box">HTML5</div>
+        <div class="box">CSS3</div>
+        <div class="box">JavaScript</div>
+        <div class="box">Responsive Design</div>
     </div>
 </section>
 
 <section id="projects">
     <h2>My Projects</h2>
 
-    <div class="services">
-        <div class="service-box">
+    <div class="grid">
+        <div class="box">
             <h3>Portfolio Website</h3>
             <p>Modern personal portfolio website.</p>
         </div>
 
-        <div class="service-box">
+        <div class="box">
             <h3>Business Website</h3>
             <p>Responsive company website.</p>
         </div>
 
-        <div class="service-box">
+        <div class="box">
             <h3>Login Form</h3>
-            <p>Professional login and signup page.</p>
+            <p>Professional login page.</p>
         </div>
     </div>
 </section>
@@ -102,28 +97,11 @@
 <section id="services">
     <h2>My Services</h2>
 
-    <div class="services">
-
-        <div class="service-box">
-            <h3>Website Design</h3>
-            <p>Modern responsive website design.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Landing Pages</h3>
-            <p>Professional landing pages.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Portfolio Websites</h3>
-            <p>Personal portfolio development.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Website Maintenance</h3>
-            <p>Update and improve websites.</p>
-        </div>
-
+    <div class="grid">
+        <div class="box">Website Design</div>
+        <div class="box">Landing Pages</div>
+        <div class="box">Portfolio Websites</div>
+        <div class="box">Website Maintenance</div>
     </div>
 </section>
 
@@ -131,22 +109,24 @@
     <div class="card">
         <h2>Contact Me</h2>
 
-        <form class="contact-form" onsubmit="showMessage(event)">
-            <input type="text" placeholder="Your Name" required>
+        <form action="https://formsubmit.co/nasir89263@gmail.com" method="POST">
 
-            <input type="email" placeholder="Your Email" required>
+            <input type="hidden" name="_subject" value="New Contact Message">
 
-            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
             <button type="submit">Send Message</button>
 
-            <p id="message"></p>
         </form>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Nasir Baloch Portfolio | Front-End Developer</p>
+    <p>© 2026 Nasir Baloch Portfolio</p>
 </footer>
 
 <script src="script.js"></script>
